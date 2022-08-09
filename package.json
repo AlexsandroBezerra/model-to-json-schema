@@ -1,0 +1,29 @@
+{
+  "name": "model-to-json-schema",
+  "version": "1.0.0",
+  "description": "A CLI that transform models in JSON Schemas",
+  "bin": "dist/cli.js",
+  "keywords": [
+    "cli",
+    "jsonschema"
+  ],
+  "homepage": "https://github.com/AlexsandroBezerra/model-to-json-schema#readme",
+  "bugs": {
+    "url": "https://github.com/AlexsandroBezerra/model-to-json-schema/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexsandroBezerra/model-to-json-schema.git"
+  },
+  "license": "MIT",
+  "author": "Alexsandro G Bezerra <alexsandro.g.bezerra@gmail.com>",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "cli": "node dist/cli.js"
+  }
+}
