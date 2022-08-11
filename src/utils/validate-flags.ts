@@ -1,4 +1,6 @@
 import args from 'args'
+
+import { DEFAULT_OUTPUT } from '../constants';
 import { textInRed } from './colorize';
 
 type ValidateFlagsProp = { 
@@ -11,7 +13,7 @@ type ValidateFlagsReturn = {
 }
 
 export function validateFlags(flags: ValidateFlagsProp): ValidateFlagsReturn {
-  if (flags.input === 'undefined') {
+  if (flags.input === DEFAULT_OUTPUT) {
     console.error(textInRed('Input file or directory is required\n'))
     args.showHelp()
 
